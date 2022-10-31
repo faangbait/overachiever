@@ -1,11 +1,10 @@
 import turtle
 from functools import partial
-import math
 
 turtle.delay(0)
 turtle.speed(0)
 turtle.bgcolor(0.1, 0.1, 0.1)
-turtle.title("Tesselation")
+turtle.title("Alfy.io bootcamp submission - week 1 - turtle")
 
 def draw_shape(sides, fill=(0,0,0)):
     """
