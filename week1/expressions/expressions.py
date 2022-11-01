@@ -105,5 +105,8 @@ def temp_checker(min_temp, *args):
     for temp in args:
         if temp > min_temp:
             count += 1
+            # shortcircuit the loop if we've resolved to True
+            if count >= 2:
+                return True
 
-    return count >= 2
+    return False
