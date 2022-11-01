@@ -20,13 +20,13 @@ def calc_math_expression(num1, num2, operator):
     try:
         match operator:
             case '+':
-                return float(num1+num2)
+                return num1 + num2
             case '-':
-                return float(num1-num2)
+                return num1 - num2
             case '*':
-                return float(num1*num2)
+                return num1 * num2
             case ':':
-                return float(num1/num2)
+                return num1 / num2
             case _:
                 return None
     except ZeroDivisionError:
@@ -70,12 +70,12 @@ def quadratic_equation_solver(a, b, c):
         return (None, None)
 
     try:
-        pos = (-b + math.sqrt(b**2 - 4*a*c)) / (2 * a)
+        pos = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
     except ValueError:
         pos = None
     
     try:
-        neg = (-b - math.sqrt(b**2 - 4*a*c)) / (2 * a)
+        neg = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
     except ValueError:
         neg = None
     
